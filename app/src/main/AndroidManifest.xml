@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.antrianapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.location.GPS_ENABLED_CHANGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="AntrianApp"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AntrianApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DetailsSetWaktuBim"></activity>
+        <activity android:name=".KehadiranMhs" />
+        <activity android:name=".MainCalenderMhs" />
+        <activity android:name=".EventCalender" />
+        <activity android:name=".MainCalender" />
+        <activity android:name=".ListGeoMhs" />
+        <activity android:name=".LokasiDosen" />
+        <activity android:name=".AturKalenderLokasi" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!-- <uses-library android:name="org.apache.http.legacy" android:required="false"/> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCq80fXlQVdZ5DWDg3_rMWDtayZNeUdc8k" />
+
+        <activity android:name=".MapsActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LihatTanggal" />
+        <activity android:name=".RiwayatBimDos" />
+        <activity android:name=".RiwayatBimMhs" />
+        <activity android:name=".ProfilDos" />
+        <activity android:name=".LihatDosen" />
+        <activity android:name=".DetailsAntrian" />
+        <activity android:name=".ProsesBimDos" />
+        <activity android:name=".DetailsBimDosen" />
+        <activity android:name=".models.KirimEmail" />
+        <activity android:name=".JadwalBimMhs" /> <!-- android:parentActivityName=".MenuMhs" -->
+        <activity android:name=".Register" />
+        <activity android:name=".MenuDosen" />
+        <activity android:name=".MenuMhs" />
+        <activity android:name=".DaftarReqBimbingan" />
+        <activity android:name=".FormBatal" />
+        <activity android:name=".ReqJadwalBimbingan" />
+        <activity android:name=".SelesaiBim" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profil" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".ProsesBimMhs" />
+
+        <receiver
+            android:name=".BroadcastManager"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".GeofenceRegistrationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyBackgroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".FirebaseMessagingService"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+    <!--            android:exported="false"-->
+    <!--            android:directBootAware="true">-->
+</manifest>

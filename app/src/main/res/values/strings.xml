@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AntrianApp</string>
+    <string name="level">AntrianApp</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="next"><![CDATA[>]]></string>
+    <string name="title_activity_maps">Map</string>
+</resources>

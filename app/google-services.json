@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "801068541058",
+    "project_id": "antrianapp-1c8be",
+    "storage_bucket": "antrianapp-1c8be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801068541058:android:b82e3f7c1018870361409b",
+        "android_client_info": {
+          "package_name": "com.example.antrianapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801068541058-e192p520h8d2qjhlvnlk78ukpvp51qhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.antrianapp",
+            "certificate_hash": "ca73b8f3c7bf2c49109644b7466c7f29c3077f3d"
+          }
+        },
+        {
+          "client_id": "801068541058-ngrpi4bqafqrf56b3lbas3kpbsqfm4rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOoypKwnVSQxyvBP7NKdppuURofPPV5MQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801068541058-ngrpi4bqafqrf56b3lbas3kpbsqfm4rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
